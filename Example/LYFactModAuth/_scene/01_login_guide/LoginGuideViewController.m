@@ -1,5 +1,5 @@
 //
-//  LYTestViewController.m
+//  LoginGuideViewController.m
 //	LYFactModAuth
 //
 //	CREATED BY LUO YU ON 2021-12-14.
@@ -24,14 +24,33 @@
 //	THE SOFTWARE.
 //
 
-#import "LYTestViewController.h"
+#import "LoginGuideViewController.h"
+#import "PreHeader.h"
 
 
-@interface LYTestViewController () {}
+@interface LoginGuideViewController () {}
 @end
 
-@implementation LYTestViewController
+@implementation LoginGuideViewController
 
-
+- (void)loadView {
+	[super loadView];
+	
+	{
+		lblAgreement.text = @"登录即代表同意";
+		[btnAgreement setTitle:@"《用户协议》" forState:UIControlStateNormal];
+		lblAnd.text = @"和";
+		[btnPrivacy setTitle:@"《隐私协议》" forState:UIControlStateNormal];
+	}
+	
+	{
+		lblOneKeyMobile.text = @"139****8888";
+		lblOneKeyButtonTitle.text = @"一键登录";
+	}
+	
+	{
+		lblAppName.text = @"登录模块";
+	}
+}
 
 @end
