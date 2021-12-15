@@ -26,12 +26,27 @@
 
 #import "LoginGuideViewController.h"
 #import "PreHeader.h"
+#import "UserAgreementViewController.h"
+#import "PrivacyViewController.h"
 
 
 @interface LoginGuideViewController () {}
 @end
 
 @implementation LoginGuideViewController
+
+// MARK: - ACTION
+
+- (void)userAgreementButtonPressed:(id)sender {
+	[self pushTo:[[UserAgreementViewController alloc] init]];
+}
+
+- (void)privacyButtonPressed:(id)sender {
+	[self pushTo:[[PrivacyViewController alloc] init]];
+}
+
+// MARK: - INIT
+// MARK: - VIEW LIFE CYCLE
 
 - (void)loadView {
 	[super loadView];
@@ -51,6 +66,31 @@
 	{
 		lblAppName.text = @"登录模块";
 	}
+	
+	{
+		[ivAppIcon border1Px];
+		[lblAppName border1Px];
+		
+		[lblOneKeyMobile border1Px];
+		[cOneKey border1Px];
+	}
 }
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	
+	[btnAgreement addTarget:self action:@selector(userAgreementButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+	[btnPrivacy addTarget:self action:@selector(privacyButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+// MARK: - METHOD
+
+// MARK: PRIVATE METHOD
+
+// MARK: PROPERTY
+
+// MARK: BLOCK
+
+// MARK: - DELEGATE
 
 @end

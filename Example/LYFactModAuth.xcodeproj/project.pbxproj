@@ -18,6 +18,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		8953884227689A1B00A31D87 /* LYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953884027689A1B00A31D87 /* LYTestViewController.m */; };
 		8953884527689A4100A31D87 /* LoginGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953884427689A4100A31D87 /* LoginGuideViewController.m */; };
+		89C94E442769C995004F46E1 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94E432769C995004F46E1 /* PrivacyViewController.m */; };
+		89C94E472769F40E004F46E1 /* UserAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94E462769F40E004F46E1 /* UserAgreementViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		8953884127689A1B00A31D87 /* LYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTestViewController.h; sourceTree = "<group>"; };
 		8953884327689A4100A31D87 /* LoginGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginGuideViewController.h; sourceTree = "<group>"; };
 		8953884427689A4100A31D87 /* LoginGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginGuideViewController.m; sourceTree = "<group>"; };
+		89C94E422769C995004F46E1 /* PrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
+		89C94E432769C995004F46E1 /* PrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
+		89C94E452769F40E004F46E1 /* UserAgreementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAgreementViewController.h; sourceTree = "<group>"; };
+		89C94E462769F40E004F46E1 /* UserAgreementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAgreementViewController.m; sourceTree = "<group>"; };
 		ADBC19202DE74DE818F88A27 /* Pods_LYFactModAuth_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYFactModAuth_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7ABCB9A505004CA60EEDB1 /* Pods-LYFactModAuth_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFactModAuth_Example.debug.xcconfig"; path = "Target Support Files/Pods-LYFactModAuth_Example/Pods-LYFactModAuth_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E9AF0E2FE8EAF49E42CCD8C3 /* LYFactModAuth.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYFactModAuth.podspec; path = ../LYFactModAuth.podspec; sourceTree = "<group>"; };
@@ -160,6 +166,10 @@
 			children = (
 				8953884327689A4100A31D87 /* LoginGuideViewController.h */,
 				8953884427689A4100A31D87 /* LoginGuideViewController.m */,
+				89C94E422769C995004F46E1 /* PrivacyViewController.h */,
+				89C94E432769C995004F46E1 /* PrivacyViewController.m */,
+				89C94E452769F40E004F46E1 /* UserAgreementViewController.h */,
+				89C94E462769F40E004F46E1 /* UserAgreementViewController.m */,
 			);
 			path = 01_login_guide;
 			sourceTree = "<group>";
@@ -295,9 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C94E442769C995004F46E1 /* PrivacyViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LYAppDelegate.m in Sources */,
 				8953884227689A1B00A31D87 /* LYTestViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				89C94E472769F40E004F46E1 /* UserAgreementViewController.m in Sources */,
 				8953884527689A4100A31D87 /* LoginGuideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
