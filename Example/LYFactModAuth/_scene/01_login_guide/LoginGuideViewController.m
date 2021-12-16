@@ -30,6 +30,7 @@
 #import "MobileLoginViewController.h"
 #import "UserAgreementViewController.h"
 #import "PrivacyViewController.h"
+#import "EmailLoginViewController.h"
 
 
 @interface LoginGuideViewController () {}
@@ -58,6 +59,8 @@
 		[self pushTo:[[MobileLoginViewController alloc] init]];
 		return;
 	} else if (sender == btnEmail) {
+		[self pushTo:[[EmailLoginViewController alloc] init]];
+		return;
 	} else if (sender == btnWechat) {
 	} else if (sender == btnQQ) {
 	} else if (sender == btnWeibo) {
@@ -87,10 +90,10 @@
 	}
 	
 	{
-		btnMobile.hidden = NO;
+		btnMobile.hidden = btnEmail.hidden = NO;
 		
 		[btnMobile.leftAnchor constraintEqualToAnchor:vOthers.leftAnchor].active = YES;
-		[btnMobile.bottomAnchor constraintEqualToAnchor:vOthers.bottomAnchor].active = YES;
+		[btnEmail.leadingAnchor constraintEqualToAnchor:btnMobile.trailingAnchor constant:FAC_PADDING].active = YES;
 	}
 	
 	{

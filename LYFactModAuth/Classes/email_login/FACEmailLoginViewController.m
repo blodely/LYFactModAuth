@@ -36,6 +36,47 @@
 // MARK: - ACTION
 // MARK: - INIT
 // MARK: - VIEW LIFE CYCLE
+
+- (void)loadView {
+	[super loadView];
+	
+	{
+		UITextField *view = [[UITextField alloc] init];
+		view.translatesAutoresizingMaskIntoConstraints = NO;
+		[self.view addSubview:view];
+		tfEmail = view;
+		
+		[view.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:FAC_PADDING].active = YES;
+		[view.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-FAC_PADDING].active = YES;
+		[view.heightAnchor constraintEqualToConstant:FAC_CTL_SIDE].active = YES;
+		[view.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:FAC_PADDING].active = YES;
+	}
+	
+	{
+		UITextField *view = [[UITextField alloc] init];
+		view.translatesAutoresizingMaskIntoConstraints = NO;
+		view.secureTextEntry = YES;
+		[self.view addSubview:view];
+		tfPassword = view;
+		
+		[view.leftAnchor constraintEqualToAnchor:tfEmail.leftAnchor].active = YES;
+		[view.rightAnchor constraintEqualToAnchor:tfEmail.rightAnchor].active = YES;
+		[view.heightAnchor constraintEqualToAnchor:tfEmail.heightAnchor].active = YES;
+		[view.topAnchor constraintEqualToAnchor:tfEmail.bottomAnchor constant:FAC_PADDING].active = YES;
+	}
+	
+	{
+		UIButton *view = [UIButton buttonWithType:UIButtonTypeSystem];
+		view.translatesAutoresizingMaskIntoConstraints = NO;
+		[self.view addSubview:view];
+		btnSubmit = view;
+		
+		[view.leftAnchor constraintEqualToAnchor:tfEmail.leftAnchor].active = YES;
+		[view.rightAnchor constraintEqualToAnchor:tfEmail.rightAnchor].active = YES;
+		[view.topAnchor constraintEqualToAnchor:tfPassword.bottomAnchor constant:FAC_PADDING].active = YES;
+		[view.heightAnchor constraintEqualToAnchor:tfEmail.heightAnchor].active = YES;
+	}
+}
 // MARK: - METHOD
 // MARK: PRIVATE METHOD
 // MARK: PROPERTY

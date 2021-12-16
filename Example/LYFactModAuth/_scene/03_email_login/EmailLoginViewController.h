@@ -1,5 +1,5 @@
 //
-//	FACEmailLoginViewController.h
+//	EmailLoginViewController.h
 //	LYFactModAuth
 //
 //	CREATED BY LUO YU ON 2021-12-16.
@@ -24,15 +24,9 @@
 //	THE SOFTWARE.
 //
 
-#import <LYFactAppCommon/LYFactAppCommon.h>
+#import <LYFactModAuth/LYFactModAuth.h>
 
 
-@interface FACEmailLoginViewController : FACBaseVC {
-	
-	__weak UITextField *tfEmail;
-	__weak UITextField *tfPassword;
-	
-	__weak UIButton *btnSubmit;
-}
+@interface EmailLoginViewController : FACEmailLoginViewController
 
 @end

@@ -1,5 +1,5 @@
 //
-//	FACEmailLoginViewController.h
+//	EmailLoginViewController.m
 //	LYFactModAuth
 //
 //	CREATED BY LUO YU ON 2021-12-16.
@@ -24,15 +24,50 @@
 //	THE SOFTWARE.
 //
 
-#import <LYFactAppCommon/LYFactAppCommon.h>
+#import "EmailLoginViewController.h"
+#import "PreHeader.h"
 
 
-@interface FACEmailLoginViewController : FACBaseVC {
+@interface EmailLoginViewController () {}
+@end
+
+@implementation EmailLoginViewController
+
+// MARK: - ACTION
+// MARK: - INIT
+// MARK: - VIEW LIFE CYCLE
+
+- (void)loadView {
+	[super loadView];
 	
-	__weak UITextField *tfEmail;
-	__weak UITextField *tfPassword;
+	{
+		self.navigationItem.title = @"Login with Email";
+	}
 	
-	__weak UIButton *btnSubmit;
+	{
+		tfEmail.placeholder = @"Email";
+		tfPassword.placeholder = @"Password";
+		[btnSubmit setTitle:@"Login" forState:UIControlStateNormal];
+		
+		[tfEmail border1Px];
+		[tfPassword border1Px];
+		[btnSubmit border1Px];
+	}
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	
+	[self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
+// MARK: - METHOD
+// MARK: PRIVATE METHOD
+// MARK: PROPERTY
+// MARK: BLOCK
+// MARK: - DELEGATE
+// MARK:
+// MARK: - NOTIFICATION
+// MARK:
 
 @end

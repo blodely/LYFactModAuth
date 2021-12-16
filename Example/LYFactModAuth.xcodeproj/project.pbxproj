@@ -18,6 +18,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		8953884227689A1B00A31D87 /* LYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953884027689A1B00A31D87 /* LYTestViewController.m */; };
 		8953884527689A4100A31D87 /* LoginGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953884427689A4100A31D87 /* LoginGuideViewController.m */; };
+		899BBBA1276B1FCB00D620DA /* EmailLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899BBBA0276B1FCB00D620DA /* EmailLoginViewController.m */; };
 		89C94E442769C995004F46E1 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94E432769C995004F46E1 /* PrivacyViewController.m */; };
 		89C94E472769F40E004F46E1 /* UserAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94E462769F40E004F46E1 /* UserAgreementViewController.m */; };
 		89C94E4F2769F65D004F46E1 /* MobileLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94E4E2769F65D004F46E1 /* MobileLoginViewController.m */; };
@@ -43,6 +44,8 @@
 		8953884127689A1B00A31D87 /* LYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTestViewController.h; sourceTree = "<group>"; };
 		8953884327689A4100A31D87 /* LoginGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginGuideViewController.h; sourceTree = "<group>"; };
 		8953884427689A4100A31D87 /* LoginGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginGuideViewController.m; sourceTree = "<group>"; };
+		899BBB9F276B1FCB00D620DA /* EmailLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailLoginViewController.h; sourceTree = "<group>"; };
+		899BBBA0276B1FCB00D620DA /* EmailLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailLoginViewController.m; sourceTree = "<group>"; };
 		89C94E422769C995004F46E1 /* PrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
 		89C94E432769C995004F46E1 /* PrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
 		89C94E452769F40E004F46E1 /* UserAgreementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAgreementViewController.h; sourceTree = "<group>"; };
@@ -161,6 +164,7 @@
 				8953883F27689A1B00A31D87 /* 00_test */,
 				8953883E27689A1B00A31D87 /* 01_login_guide */,
 				89C94E482769F576004F46E1 /* 02_mobile_login */,
+				899BBB9E276B1FB800D620DA /* 03_email_login */,
 			);
 			path = _scene;
 			sourceTree = "<group>";
@@ -185,6 +189,15 @@
 				8953884027689A1B00A31D87 /* LYTestViewController.m */,
 			);
 			path = 00_test;
+			sourceTree = "<group>";
+		};
+		899BBB9E276B1FB800D620DA /* 03_email_login */ = {
+			isa = PBXGroup;
+			children = (
+				899BBB9F276B1FCB00D620DA /* EmailLoginViewController.h */,
+				899BBBA0276B1FCB00D620DA /* EmailLoginViewController.m */,
+			);
+			path = 03_email_login;
 			sourceTree = "<group>";
 		};
 		89C94E482769F576004F46E1 /* 02_mobile_login */ = {
@@ -318,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899BBBA1276B1FCB00D620DA /* EmailLoginViewController.m in Sources */,
 				89C94E442769C995004F46E1 /* PrivacyViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LYAppDelegate.m in Sources */,
 				89C94E4F2769F65D004F46E1 /* MobileLoginViewController.m in Sources */,
