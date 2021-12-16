@@ -223,6 +223,7 @@
 			[vOthers addSubview:view];
 			btnMobile = view;
 			
+			[view.bottomAnchor constraintEqualToAnchor:vOthers.bottomAnchor].active = YES;
 			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			
@@ -236,6 +237,7 @@
 			[vOthers addSubview:view];
 			btnEmail = view;
 			
+			[view.bottomAnchor constraintEqualToAnchor:vOthers.bottomAnchor].active = YES;
 			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			
@@ -249,6 +251,7 @@
 			[vOthers addSubview:view];
 			btnWechat = view;
 			
+			[view.bottomAnchor constraintEqualToAnchor:vOthers.bottomAnchor].active = YES;
 			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			
@@ -262,6 +265,7 @@
 			[vOthers addSubview:view];
 			btnQQ = view;
 			
+			[view.bottomAnchor constraintEqualToAnchor:vOthers.bottomAnchor].active = YES;
 			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			
@@ -275,6 +279,7 @@
 			[vOthers addSubview:view];
 			btnWeibo = view;
 			
+			[view.bottomAnchor constraintEqualToAnchor:vOthers.bottomAnchor].active = YES;
 			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
 			

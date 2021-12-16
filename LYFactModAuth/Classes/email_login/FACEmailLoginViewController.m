@@ -1,8 +1,8 @@
 //
-//  FACMoblieLoginViewController.m
+//	FACEmailLoginViewController.m
 //	LYFactModAuth
 //
-//	CREATED BY LUO YU ON 2021-12-15.
+//	CREATED BY LUO YU ON 2021-12-16.
 //	Copyright (c) 2021 骆昱 (Luo Yu, blodely) <indie.luo@gmail.com>
 //
 //	Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,13 +24,14 @@
 //	THE SOFTWARE.
 //
 
-#import "FACMoblieLoginViewController.h"
+#import "FACEmailLoginViewController.h"
+#import <LYFactModAuth/LYFactModAuth.h>
 
 
-@interface FACMoblieLoginViewController () {}
+@interface FACEmailLoginViewController () {}
 @end
 
-@implementation FACMoblieLoginViewController
+@implementation FACEmailLoginViewController
 
 // MARK: - ACTION
 // MARK: - INIT

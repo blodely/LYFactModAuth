@@ -34,3 +34,4 @@
 
 #import <LYFactModAuth/FACLoginGuideViewController.h>
 #import <LYFactModAuth/FACMoblieLoginViewController.h>
+#import <LYFactModAuth/FACEmailLoginViewController.h>
