@@ -195,6 +195,63 @@
 			[view.bottomAnchor constraintEqualToAnchor:vAgreement.bottomAnchor].active = YES;
 		}
 	}
+	
+	{
+		// MARK: 其他登录
+		
+		{
+			FACBaseView *view = [[FACBaseView alloc] init];
+			view.translatesAutoresizingMaskIntoConstraints = NO;
+			[self.view addSubview:view];
+			vOthers = view;
+			
+			[view.bottomAnchor constraintEqualToAnchor:vAgreement.topAnchor constant:-FAC_PADDING].active = YES;
+			[view.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
+			[view.heightAnchor constraintEqualToConstant:100].active = YES;
+			
+			[view.widthAnchor constraintEqualToConstant:200].active = YES;
+		}
+		
+		{
+			UIButton *view = [UIButton buttonWithType:UIButtonTypeSystem];
+			view.translatesAutoresizingMaskIntoConstraints = NO;
+			view.hidden = YES;
+			[vOthers addSubview:view];
+			btnMobile = view;
+		}
+		
+		{
+			UIButton *view = [UIButton buttonWithType:UIButtonTypeSystem];
+			view.translatesAutoresizingMaskIntoConstraints = NO;
+			view.hidden = YES;
+			[vOthers addSubview:view];
+			btnEmail = view;
+		}
+		
+		{
+			UIButton *view = [UIButton buttonWithType:UIButtonTypeSystem];
+			view.translatesAutoresizingMaskIntoConstraints = NO;
+			view.hidden = YES;
+			[vOthers addSubview:view];
+			btnWechat = view;
+		}
+		
+		{
+			UIButton *view = [UIButton buttonWithType:UIButtonTypeSystem];
+			view.translatesAutoresizingMaskIntoConstraints = NO;
+			view.hidden = YES;
+			[vOthers addSubview:view];
+			btnQQ = view;
+		}
+		
+		{
+			UIButton *view = [UIButton buttonWithType:UIButtonTypeSystem];
+			view.translatesAutoresizingMaskIntoConstraints = NO;
+			view.hidden = NO;
+			[vOthers addSubview:view];
+			btnWeibo = view;
+		}
+	}
 }
 
 // MARK: - METHOD

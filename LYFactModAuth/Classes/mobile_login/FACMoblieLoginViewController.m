@@ -1,8 +1,8 @@
 //
-//  FACLoginGuideViewController.h
+//  FACMoblieLoginViewController.m
 //	LYFactModAuth
 //
-//	CREATED BY LUO YU ON 2021-12-14.
+//	CREATED BY LUO YU ON 2021-12-15.
 //	Copyright (c) 2021 骆昱 (Luo Yu, blodely) <indie.luo@gmail.com>
 //
 //	Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,32 +24,14 @@
 //	THE SOFTWARE.
 //
 
-#import <LYFactAppCommon/LYFactAppCommon.h>
+#import "FACMoblieLoginViewController.h"
 
 
-@interface FACLoginGuideViewController : FACBaseHideNavbarVC {
-	
-	__weak FACBaseView *vLogo;
-	__weak UIImageView *ivAppIcon;
-	__weak UILabel *lblAppName;
-	
-	__weak FACBaseView *vOneKeyLogin;
-	__weak UILabel *lblOneKeyMobile;
-	__weak FACBaseControl *cOneKey;
-	__weak UILabel *lblOneKeyButtonTitle;
-	
-	__weak FACBaseView *vOthers;
-	__weak UIButton *btnMobile;
-	__weak UIButton *btnEmail;
-	__weak UIButton *btnWechat;
-	__weak UIButton *btnQQ;
-	__weak UIButton *btnWeibo;
-	
-	__weak FACBaseView *vAgreement;
-	__weak UILabel *lblAgreement;
-	__weak UIButton *btnAgreement;
-	__weak UILabel *lblAnd;
-	__weak UIButton *btnPrivacy;
-}
+@interface FACMoblieLoginViewController () {}
+@end
+
+@implementation FACMoblieLoginViewController
+
+
 
 @end
