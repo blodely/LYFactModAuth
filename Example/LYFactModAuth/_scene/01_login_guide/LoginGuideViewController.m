@@ -61,6 +61,7 @@
 	} else if (sender == btnEmail) {
 		[self pushTo:[[EmailLoginViewController alloc] init]];
 		return;
+	} else if (sender == btnApple) {
 	} else if (sender == btnWechat) {
 	} else if (sender == btnQQ) {
 	} else if (sender == btnWeibo) {
@@ -90,10 +91,11 @@
 	}
 	
 	{
-		btnMobile.hidden = btnEmail.hidden = NO;
+		btnMobile.hidden = btnEmail.hidden = btnApple.hidden = NO;
 		
 		[btnMobile.leftAnchor constraintEqualToAnchor:vOthers.leftAnchor].active = YES;
 		[btnEmail.leadingAnchor constraintEqualToAnchor:btnMobile.trailingAnchor constant:FAC_PADDING].active = YES;
+		[btnApple.leadingAnchor constraintEqualToAnchor:btnEmail.trailingAnchor constant:FAC_PADDING].active = YES;
 	}
 	
 	{

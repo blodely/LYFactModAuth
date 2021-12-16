@@ -41,6 +41,7 @@
 	__weak FACBaseView *vOthers;
 	__weak UIButton *btnMobile;
 	__weak UIButton *btnEmail;
+	__weak UIButton *btnApple;
 	__weak UIButton *btnWechat;
 	__weak UIButton *btnQQ;
 	__weak UIButton *btnWeibo;

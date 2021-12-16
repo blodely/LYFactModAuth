@@ -249,6 +249,20 @@
 			view.translatesAutoresizingMaskIntoConstraints = NO;
 			view.hidden = YES;
 			[vOthers addSubview:view];
+			btnApple = view;
+			
+			[view.bottomAnchor constraintEqualToAnchor:vOthers.bottomAnchor].active = YES;
+			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			
+			[view addTarget:self action:@selector(thirdPartyLoginButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+		}
+		
+		{
+			UIButton *view = [UIButton buttonWithType:UIButtonTypeSystem];
+			view.translatesAutoresizingMaskIntoConstraints = NO;
+			view.hidden = YES;
+			[vOthers addSubview:view];
 			btnWechat = view;
 			
 			[view.bottomAnchor constraintEqualToAnchor:vOthers.bottomAnchor].active = YES;
