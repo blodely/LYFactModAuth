@@ -26,6 +26,8 @@
 
 #import "LoginGuideViewController.h"
 #import "PreHeader.h"
+
+#import "MobileLoginViewController.h"
 #import "UserAgreementViewController.h"
 #import "PrivacyViewController.h"
 
@@ -37,12 +39,29 @@
 
 // MARK: - ACTION
 
+- (void)mobileLoginButtonPressed:(id)sender {
+	[self pushTo:[[MobileLoginViewController alloc] init]];
+}
+
 - (void)userAgreementButtonPressed:(id)sender {
 	[self pushTo:[[UserAgreementViewController alloc] init]];
 }
 
 - (void)privacyButtonPressed:(id)sender {
 	[self pushTo:[[PrivacyViewController alloc] init]];
+}
+
+- (void)thirdPartyLoginButtonPressed:(id)sender {
+	[super thirdPartyLoginButtonPressed:sender];
+	
+	if (sender == btnMobile) {
+		[self pushTo:[[MobileLoginViewController alloc] init]];
+		return;
+	} else if (sender == btnEmail) {
+	} else if (sender == btnWechat) {
+	} else if (sender == btnQQ) {
+	} else if (sender == btnWeibo) {
+	}
 }
 
 // MARK: - INIT
@@ -68,11 +87,26 @@
 	}
 	
 	{
+		btnMobile.hidden = NO;
+		
+		[btnMobile.leftAnchor constraintEqualToAnchor:vOthers.leftAnchor].active = YES;
+		[btnMobile.bottomAnchor constraintEqualToAnchor:vOthers.bottomAnchor].active = YES;
+	}
+	
+	{
 		[ivAppIcon border1Px];
 		[lblAppName border1Px];
 		
 		[lblOneKeyMobile border1Px];
 		[cOneKey border1Px];
+		
+		[vOthers border1Px];
+		
+		for (UIView *one in vOthers.subviews) {
+			if ([one isKindOfClass:[UIButton class]]) {
+				[one border1Px];
+			}
+		}
 	}
 }
 

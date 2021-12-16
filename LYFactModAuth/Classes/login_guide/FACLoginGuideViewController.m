@@ -34,6 +34,10 @@
 @implementation FACLoginGuideViewController
 
 // MARK: - ACTION
+
+- (void)thirdPartyLoginButtonPressed:(id)sender {
+}
+
 // MARK: - INIT
 // MARK: - VIEW LIFE CYCLE
 
@@ -218,6 +222,11 @@
 			view.hidden = YES;
 			[vOthers addSubview:view];
 			btnMobile = view;
+			
+			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			
+			[view addTarget:self action:@selector(thirdPartyLoginButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 		}
 		
 		{
@@ -226,6 +235,11 @@
 			view.hidden = YES;
 			[vOthers addSubview:view];
 			btnEmail = view;
+			
+			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			
+			[view addTarget:self action:@selector(thirdPartyLoginButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 		}
 		
 		{
@@ -234,6 +248,11 @@
 			view.hidden = YES;
 			[vOthers addSubview:view];
 			btnWechat = view;
+			
+			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			
+			[view addTarget:self action:@selector(thirdPartyLoginButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 		}
 		
 		{
@@ -242,14 +261,24 @@
 			view.hidden = YES;
 			[vOthers addSubview:view];
 			btnQQ = view;
+			
+			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			
+			[view addTarget:self action:@selector(thirdPartyLoginButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 		}
 		
 		{
 			UIButton *view = [UIButton buttonWithType:UIButtonTypeSystem];
 			view.translatesAutoresizingMaskIntoConstraints = NO;
-			view.hidden = NO;
+			view.hidden = YES;
 			[vOthers addSubview:view];
 			btnWeibo = view;
+			
+			[view.widthAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			[view.heightAnchor constraintEqualToConstant:FAC_CTL_SMALL].active = YES;
+			
+			[view addTarget:self action:@selector(thirdPartyLoginButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 		}
 	}
 }

@@ -32,6 +32,10 @@
 
 @implementation PrivacyViewController
 
+// MARK: - ACTION
+// MARK: - INIT
+// MARK: - VIEW LIFE CYCLE
+
 - (void)loadView {
 	[super loadView];
 	
@@ -51,5 +55,14 @@
 	
 	[self.navigationController setNavigationBarHidden:NO animated:animated];
 }
+
+// MARK: - METHOD
+// MARK: PRIVATE METHOD
+// MARK: PROPERTY
+// MARK: BLOCK
+// MARK: - DELEGATE
+// MARK:
+// MARK: - NOTIFICATION
+// MARK:
 
 @end
