@@ -17,7 +17,7 @@ User-auth Module.
 	
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Luo Yu' => 'indie.luo@gmail.com' }
-  s.source           = { :git => 'https://github.com/Luo Yu/LYFactModAuth.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/blodely/LYFactModAuth.git', :tag => s.version.to_s }
   s.social_media_url = 'https://weibo.com/blodely'
 
   s.ios.deployment_target = '11.0'
