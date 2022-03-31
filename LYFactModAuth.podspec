@@ -35,6 +35,6 @@ User-auth Module.
 	s.frameworks = 'UIKit'
 	
 	s.dependency 'LYCategory', '~> 1.13'
-	s.dependency 'LYFactAppCommon'
+	s.dependency 'LYFactAppCommon', '~> 1.0.21'
 	
 end
