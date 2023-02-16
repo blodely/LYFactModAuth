@@ -6,7 +6,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYFactModAuth'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'LYFactModAuth.'
 
   s.description      = <<-DESC
@@ -20,7 +20,7 @@ User-auth Module.
   s.source           = { :git => 'https://github.com/blodely/LYFactModAuth.git', :tag => s.version.to_s }
   s.social_media_url = 'https://weibo.com/blodely'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'LYFactModAuth/Classes/**/*'
   
@@ -34,7 +34,7 @@ User-auth Module.
 	
 	s.frameworks = 'UIKit'
 	
-	s.dependency 'LYCategory', '~> 1.13'
-	s.dependency 'LYFactAppCommon', '~> 1.0.21'
+	s.dependency 'LYCategory', '~> 1.14'
+	s.dependency 'LYFactAppCommon', '~> 1.12.0'
 	
 end
